@@ -2,12 +2,88 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startpagina</title>
+    <title>Stage Voortgang Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e7f0fd 0%, #cde8fa 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2878ae;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            box-shadow: 0 2px 8px rgba(40,120,174,0.10);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.3em;
+            letter-spacing: 1px;
+        }
+        .logo {
+            width: 62px;
+            margin-bottom: 6px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 32px auto;
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 14px;
+            box-shadow: 0 3px 15px rgba(40,120,174,0.15);
+            text-align: center;
+        }
+        .subtitle {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #3075ad;
+        }
+        .button {
+            display: block;
+            width: 85%;
+            margin: 20px auto;
+            padding: 16px;
+            background: linear-gradient(90deg,#2878ae 70%,#43c0e4 100%);
+            color: white;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 1px 6px rgba(40,120,174,0.08);
+            transition: background 0.18s;
+        }
+        .button:hover {
+            background: linear-gradient(90deg,#3999dc 70%,#43e4be 100%);
+        }
+        footer {
+            text-align: center;
+            margin-top: 45px;
+            color: #888;
+            font-size: 0.95em;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welkom op de Stage Voortgang Website</h1>
-    <p>Hier kun je de voortgang van je stage volgen.</p>
-    <a href="login.html">Inloggen</a>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Graduation_cap_icon.svg" alt="Stage Logo" class="logo">
+        <h1>Stage Voortgang Platform</h1>
+        <div class="subtitle">Voor Stagiairs & Begeleiders</div>
+    </header>
+    <div class="container">
+        <h2>Welkom!</h2>
+        <p>Monitor en verbeter eenvoudig de voortgang van stages.</p>
+        <a href="login.html" class="button">Stagiair Login</a>
+        <a href="login.html" class="button">Begeleider Login</a>
+    </div>
+    <footer>
+        &copy; 2025 Stage Voortgang Platform
+    </footer>
 </body>
 </html>
