@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Stage Voortgang Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #eef2f6;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 380px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 28px;
+            border-radius: 7px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 14px 0;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+            font-size: 16px;
+        }
+        select {
+            width: 85%;
+            padding: 10px;
+            margin: 12px 0;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+            font-size: 16px;
+        }
+        button {
+            width: 85%;
+            padding: 12px;
+            background: #2878ae;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            margin-top: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #2b8bc3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="voortgang.html" method="get">
+            <input type="text" name="username" placeholder="Gebruikersnaam" required><br>
+            <input type="password" name="password" placeholder="Wachtwoord" required><br>
+            <select name="role">
+                <option value="stagiair">Stagiair</option>
+                <option value="begeleider">Begeleider</option>
+            </select>
+            <button type="submit">Inloggen</button>
+        </form>
+    </div>
+</body>
+</html>
